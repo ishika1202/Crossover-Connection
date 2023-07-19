@@ -1,23 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Footer</title>
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Footer</title>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Navbar -->
+</head>
+<style>
+  /* Add your custom CSS here if needed */
+  .navbar-wrapper {
+    background-color: #ffffff; /* Add a white background color to create white spaces on the sides */
+  }
+
+
+  .hero {
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    height: 500px;
+    /* Other styles for the Hero section */
+  }
+
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+</style>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-wrapper">
   <nav class="navbar">
     <div class="logo">
       <a href="#"><img src="path/to/your/logo.png" alt="Logo"></a>
@@ -31,28 +68,37 @@
       <a href="#" class="try-free-button">Try Free</a>
     </div>
   </nav>
-    
+</div>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learner</h1>
+      <p>
+        Welcome to our AI-based platform Learner, where you get all the opportunites as per your interest. Now don't miss but grab the oppportunity
+      </p>
+    </div>
+  </section>
 
     <!-- FAQ's section -->
 
     <div class="container1">
-        <div class="wrapper">
-            <button class="toggle">
-                What is the Learner?
-                <i class="fas fa-plus icon"></i>
-            </button>
-            <div class="content">
-                <p>Learner, is an AI-based platform designed to empower individuals in discovering tailored opportunities to enhance their portfolio and career prospects. Our product serves as a personal AI career counselor/oppportunity hub, providing users with a curated list of events, scholarships, competitions, and fellowships that align with their unique portfolio.
-                </p>
-            </div>
-        </div>
-        <div class="wrapper">
-            <button class="toggle">
-                Is it free to use?
-                <i class="fas fa-plus icon"></i>
-            </button>
-            <div class="content">
-                <p>Currently we are running free trail basis but soon there will be a scription model set</p>
+      <div class="wrapper">
+          <button class="toggle">
+              What is the Learner?
+              <i class="fas fa-plus icon"></i>
+          </button>
+          <div class="content">
+              <p>Learner, is an AI-based platform designed to empower individuals in discovering tailored opportunities to enhance their portfolio and career prospects. Our product serves as a personal AI career counselor/oppportunity hub, providing users with a curated list of events, scholarships, competitions, and fellowships that align with their unique portfolio.
+              </p>
+          </div>
+      </div>
+      <div class="wrapper">
+          <button class="toggle">
+              Is it free to use?
+              <i class="fas fa-plus icon"></i>
+          </button>
+          <div class="content">
+            <p>Currently we are running free trail basis but soon there will be a scription model set</p>
             </div>
         </div>
         <div class="wrapper">
@@ -123,74 +169,68 @@
           </div>
         </div>
       </section>
-
-
-
-
-    <!-- Footer -->
-
-
-    <footer>
-      <div class="row1 primary1">
-        <div class="column1 about1">
-          <h3>Learner</h3>
-          <p>
-            Learner is an AI based platform which provides you all the real-time opportunities be it events, scholarships, fellowships, competitions. Our AI agent surfs over internet just to find right opportunities for you. Now don't miss on anything, use Learner to grab all the opportunities
-          </p>
+      <footer>
+        <div class="row1 primary1">
+          <div class="column1 about1">
+            <h3>Learner</h3>
+            <p>
+              Learner is an AI based platform which provides you all the real-time opportunities be it events, scholarships, fellowships, competitions. Our AI agent surfs over internet just to find right opportunities for you. Now don't miss on anything, use Learner to grab all the opportunities
+            </p>
+          </div>
+          <div class="column1 links1">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#faq">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#cookies-policy">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#terms-of-services">Terms Of Service</a>
+              </li>
+              <li>
+                <a href="#support">Support</a>
+              </li>
+              <li>
+                <a href="#careers">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column1 subscribe1">
+            <h3>Subscribe</h3>
+            <div>
+              <input type="email" placeholder="Your email id here" />
+              <button>Subscribe</button>
+            </div>
+            <div class="social1">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+            </div>
+          </div>
         </div>
-        <div class="column1 links1">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>
-              <a href="#faq">F.A.Q</a>
-            </li>
-            <li>
-              <a href="#cookies-policy">Cookies Policy</a>
-            </li>
-            <li>
-              <a href="#terms-of-services">Terms Of Service</a>
-            </li>
-            <li>
-              <a href="#support">Support</a>
-            </li>
-            <li>
-              <a href="#careers">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <div class="column1 subscribe1">
-          <h3>Subscribe</h3>
+        <div class="row1 secondary1">
           <div>
-            <input type="email" placeholder="Your email id here" />
-            <button>Subscribe</button>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+            </p>
+            <p>+1 4379855810</p>
           </div>
-          <div class="social1">
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-instagram-square"></i>
-            <i class="fa-brands fa-twitter-square"></i>
+          <div>
+            <p><i class="fas fa-envelope"></i></p>
+            <p>TD</p>
+          </div>
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i></p>
+            <p>Toronto, Canada</p>
           </div>
         </div>
-      </div>
-      <div class="row1 secondary1">
-        <div>
-          <p>
-            <i class="fas fa-phone-alt"></i>
-          </p>
-          <p>+1 4379855810</p>
+        <div class="row1 copyright1">
+          <p>Copyright &copy; 2021 Coding Artist | All Rights Reserved</p>
         </div>
-        <div>
-          <p><i class="fas fa-envelope"></i></p>
-          <p>TD</p>
-        </div>
-        <div>
-          <p><i class="fas fa-map-marker-alt"></i></p>
-          <p>Toronto, Canada</p>
-        </div>
-      </div>
-      <div class="row1 copyright1">
-        <p>Copyright &copy; 2021 Coding Artist | All Rights Reserved</p>
-      </div>
-    </footer>
-  </body>
+      </footer>
+    </body>
   <script src="faq.js"></script>
+</body>
 </html>

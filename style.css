@@ -1,3 +1,5 @@
+    /* Add your custom CSS here if needed */
+
 body {
     padding: 0;
     margin: 0;
@@ -39,9 +41,11 @@ body {
     padding: 10px;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid rgb(160, 157, 157);
+    border: 2px solid rgb(239, 235, 235);
     box-sizing: border-box;
   }
+  /* In style.css */
+
   
   .logo {
     flex: 1;
@@ -221,7 +225,7 @@ body {
 /* Footer CSS */
 
   footer {
-    background-color: #121315;
+    background-color: #111130;
     color: #ffffff;
     font-size: 16px;
   }
@@ -249,7 +253,7 @@ body {
   h3 {
     width: 100%;
     text-align: left;
-    color: #2a8ded;
+    color: #a993ff;
     font-size: 1.6em;
     white-space: nowrap;
   }
@@ -268,7 +272,7 @@ body {
     text-decoration: none;
   }
   ul li a:hover {
-    color: #2a8ded;
+    color: #a993ff;
   }
   .about p {
     text-align: justify;
@@ -284,7 +288,7 @@ body {
     margin-bottom: 5px;
   }
   button {
-    background-color: #2a8ded;
+    background-color: #a993ff;
     color: #ffffff;
   }
   div.social1 {
@@ -295,7 +299,7 @@ body {
     margin-top: 0.5em;
   }
   .social i:hover {
-    color: #2a8ded;
+    color: #a993ff;
   }
   .row1.secondary1 {
     display: flex;
@@ -304,7 +308,7 @@ body {
   }
   .row1.secondary1 i {
     font-size: 1.8em;
-    color: #2a8ded;
+    color: #a993ff;
   }
   .row1.secondary1 div {
     padding: 1em 0;
@@ -329,3 +333,29 @@ body {
       flex-direction: column;
     }
   }
+
+  /* style.css */
+.hero {
+  background-image: url("path/to/your/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
