@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Footer</title>
+  <title>LEARNER-A!</title>
   <!-- Font Awesome CDN -->
   <link
     rel="stylesheet"
@@ -13,71 +13,488 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
     rel="stylesheet"
   />
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
 </head>
 <style>
-  /* Add your custom CSS here if needed */
-  .navbar-wrapper {
-    background-color: #ffffff; /* Add a white background color to create white spaces on the sides */
-  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-
-  .hero {
-    background-image: url("background2.jpg");
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: url("https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130560.jpg&fm=jpg");
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 0;
-    height: 505px;
-    /* Other styles for the Hero section */
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+a:hover{
+  color: rgb(178, 127, 64);
+}
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar .logo a{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+  .navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.action_btn{
+  background-color: rgb(179, 184, 194);
+  color: rgb(48, 20, 73);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active{
+  scale: 0.95;
+}
+
+
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 100px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu .open{
+  height: 240px;
+}
+
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section#hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+#hero h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 992px){
+  .navbar .links,
+  .navbar .action_btn{
+    display: none;
   }
 
-  .hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+  .navbar .toggle_btn{
+    display: block;
   }
 
-  .hero h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+    .dropdown_menu{
+      display: block;
+    }
   }
 
-  .hero p {
-    font-size: 18px;
-    line-height: 1.6;
+@media(max-width: 576px){
+  .dropdown_menu{
+    left: 2rem;
+    width: unset;
   }
+}
+
+
+    
+.ishika{
+  margin-left: 35%;
+}
+
+.chetan{
+  margin-left: 32%;
+}
+.team{
+  width: 60%;
+}
+.row {
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+
+
+
+/* FAQ's CSS */
+.container{
+  width: 45%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+.wrapper{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+}
+.toggle,
+.content{
+  font-family: "Poppins",sans-serif;
+}
+.toggle{
+margin-left: 45%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.content{
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+/* Footer CSS */
+
+footer {
+  background-color: #111130;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row1 {
+  padding: 2em 1em;
+}
+.row1.primary1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+.column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: #a993ff;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #a993ff;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #a993ff;
+  color: #ffffff;
+}
+div.social1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i:hover {
+  color: #a993ff;
+}
+.row1.secondary1 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.row1.secondary1 i {
+  font-size: 1.8em;
+  color: #a993ff;
+}
+.row1.secondary1 div {
+  padding: 1em 0;
+  width: 100%;
+}
+.row1.secondary1 div:hover {
+  background-color: #25262e;
+}
+.copyright1 {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.copyright1 p {
+  font-size: 0.9em;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .row1.primary1 {
+    grid-template-columns: 1fr;
+  }
+  .row1.secondary1 {
+    flex-direction: column;
+  }
+}
+
+/* style.css */
+.hero {
+background-image: url("path/to/your/background-image.jpg");
+background-size: cover;
+background-position: center;
+color: #ffffff;
+text-align: center;
+padding: 100px 0;
+}
+
+.hero-content {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.hero h1 {
+font-size: 36px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+
+
+
+
+
 </style>
 <body>
-  <!-- Navbar -->
-  <div class="navbar-wrapper">
-  <nav class="navbar">
-    <div class="logo">
-      <a href="#"><img src="logo.png" alt="Logo"></a>
-    </div>
-    <ul class="nav-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+<!-- Header Section and Navbar-->
+
+<header>
+  <div class="navbar">
+    <div class="logo"><a href="#">LEARNER</a></div>
+    <ul class="links">
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="contact">Contact</a></li>
     </ul>
-    <div class="cta-button">
-      <a href="#" class="try-free-button">Try Free</a>
+
+    <a href="#" class="action_btn">TRY FREE</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
     </div>
-  </nav>
-</div>
-  <!-- Hero section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Learner</h1>
-      <p>
-        Welcome to our AI-based platform Learner, where you get all the worldwide opportunites as per your interest. Now don't miss but grab the oppportunity
-      </p>
-    </div>
-  </section>
+  </div>
+
+  <div class="dropdown_menu">
+    <ul class="links">
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="#" class="action_btn">Get Started</a></li>
+    </ul>
+  </div>
+</header> 
+
+
+<!-- Hero Section -->
+
+<section id="hero">
+
+  <h1>LEARNER-AI</h1>
+    <p>Welcome to our AI-based platform Learner, where you get all the worldwide opportunites as per your interest. <br><br>Now don't miss but grab the oppportunity</p>
+</section>
+
+
 
     <!-- FAQ's section -->
 
@@ -123,7 +540,7 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="ishika.jpeg" />
+                <img src="images/ishika.jpeg" />
               </div>
               <h3 class="ishika">ISHIKA</h3>
               <p>Founder</p>
@@ -147,10 +564,10 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="chetan.jpeg" />
+                <img src="images/chetan.jpeg" />
               </div>
               <h3 class="chetan">CHETAN</h3>
-              <p>Developer</p>
+              <p>CO-FOUNDER</p>
               <div class="icons">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
@@ -169,6 +586,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer Section -->
       <footer>
         <div class="row1 primary1">
           <div class="column1 about1">
@@ -232,5 +651,6 @@
       </footer>
     </body>
   <script src="faq.js"></script>
+  <script src="navbar.js"></script>
 </body>
 </html>
